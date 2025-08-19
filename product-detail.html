@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/product-detail.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon1/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon1/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon1/favicon-16x16.png">
+    <link rel="manifest" href="favicon1/site.webmanifest">
+    <link rel="mask-icon" href="favicon1/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Product Detail - One Click Solution</title>
+  </head>
+  <body>
+    <!-- Desktop Navbar -->
+    <header>
+      <nav class="navbar desktop-navbar">
+        <div class="logo">One Click Solution</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="dilivery.html">Delivery Policy</a></li>
+        </ul>
+        <div class="cart">
+          <a href="cart.html">
+            <img src="media/cart-icon.png" alt="Cart Icon" class="cart-icon" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Navbar -->
+    <header>
+      <nav class="navbar mobile-navbar">
+        <div class="left-icons">
+          <button class="menu-toggle" id="open-menu">Menu</button>
+          <a href="cart.html">
+            <img src="media/cart-icon.png" alt="Cart Icon" class="cart-icon" />
+          </a>
+        </div>
+        <div class="logo">One Click Solution</div>
+        <ul class="nav-links" id="mobile-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="dilivery.html">Delivery Policy</a></li>
+          <li><button class="menu-toggle" id="close-menu">Close</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="product-detail-container">
+        <div class="product-image">
+          <img src="" alt="Product Image" id="productImage" />
+        </div>
+        <div class="product-info">
+          <h1 id="productName">Product Name</h1>
+          <p class="price" id="productPrice">$0.00</p>
+          <button class="btn" id="addToCart">Add to Cart</button>
+          <button class="btn" id="buyNow">Buy Now</button>
+        </div>
+      </div>
+      <!-- Back to Home Button -->
+      <div class="back-to-home">
+        <a href="index.html" class="btn btn-primary">Back to Home</a>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>One Click Solution</h3>
+        <p>Delivering quality products with exceptional service.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 One Click Solution. All rights reserved.
+          <span class="trademark">TM</span>
+        </p>
+        <p>Phone: 5712687311</p>
+        <p>
+          6703 Bowie Dr Springfield VA 22150 | support@oneclicksolution.online
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Retrieve data from local storage
+        const productName = localStorage.getItem("productName");
+        const productPrice = localStorage.getItem("productPrice");
+        const productImage = localStorage.getItem("productImage");
+    
+        // Display data on the page
+        document.getElementById("productName").innerText = productName;
+        document.getElementById("productPrice").innerText = productPrice;
+        document.getElementById("productImage").src = productImage;
+    
+        // Add to Cart functionality
+        document.getElementById("addToCart").addEventListener("click", function () {
+          let cart = JSON.parse(localStorage.getItem("cart")) || [];
+          const product = {
+            name: productName,
+            price: parseFloat(productPrice.replace('$', '')),
+            image: productImage,
+            shipping: 20 // Fixed shipping cost
+          };
+          cart.push(product);
+          localStorage.setItem("cart", JSON.stringify(cart));
+          alert(`${productName} has been added to your cart.`);
+        });
+    
+        // Buy Now functionality
+        document.getElementById("buyNow").addEventListener("click", function () {
+          // Store product info in local storage for checkout
+          localStorage.setItem("checkoutProductName", productName);
+          localStorage.setItem("checkoutProductPrice", productPrice);
+          localStorage.setItem("checkoutProductImage", productImage);
+          localStorage.setItem("checkoutShippingCost", 20); // Fixed shipping cost
+          
+          // Redirect to checkout page
+          window.location.href = "checkout.html";
+        });
+      });
+    </script>
+    
+    
+  </body>
+</html>

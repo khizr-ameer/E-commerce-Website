@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <title>Home - One Click Solution</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon1/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon1/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon1/favicon-16x16.png">
+    <link rel="manifest" href="favicon1/site.webmanifest">
+    <link rel="mask-icon" href="favicon1/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <!-- Desktop Navbar -->
+    <header>
+      <nav class="navbar desktop-navbar">
+        <div class="logo">One Click Solution</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="dilivery.html">Delivery Policy</a></li>
+        </ul>
+        <div class="cart">
+          <a href="cart.html">
+            <img src="media/cart-icon.png" alt="Cart Icon" class="cart-icon" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Navbar -->
+    <header>
+      <nav class="navbar mobile-navbar">
+        <div class="left-icons">
+          <button class="menu-toggle" id="open-menu">Menu</button>
+          <a href="cart.html">
+            <img src="media/cart-icon.png" alt="Cart Icon" class="cart-icon" />
+          </a>
+        </div>
+        <div class="logo">One Click Solution</div>
+        <ul class="nav-links" id="mobile-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="dilivery.html">Delivery Policy</a></li>
+          <li><button class="menu-toggle" id="close-menu">Close</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Main Image with Text Overlay -->
+    <div class="main-image">
+      <img src="media/home-main.jpg" alt="Main Image" />
+      <div class="image-caption">
+        <h1><center>One Click Solution</center></h1>
+        <p>  
+          Experience effortless shopping with our
+          premium products and expert support. <br>Your seamless solution for all
+          your needs starts here. Thank you for choosing us.
+        </p>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products">
+      <h2><center> <strong>Products</strong></center></h2>
+      <div class="product-categories">
+        <a href="#clothing">Clothing</a> | 
+        <a href="#home-decor">Home Decor</a> | 
+        <a href="#bags">Bags</a>
+      </div>
+    </section>
+
+   <!-- Sections -->
+<section class="support-section" id="clothing">
+  <h2><center>Clothing</center></h2>
+  <div class="support-items">
+      <a href="product-detail.html?item=biker-leather-jacket" class="support-item" data-name="Biker Leather Jacket" data-price="300$" data-image="media/biker-jacket.jpg">
+          <img src="media/biker-jacket.jpg" alt="Biker Leather Jacket" />
+          <p>Biker Leather Jacket</p>
+          <p><strong>300$</strong></p>
+      </a>
+      <a href="product-detail.html?item=brown-fur-leather-jacket" class="support-item" data-name="Brown Fur Leather Jacket" data-price="350$" data-image="media/fur-jacket.jpg">
+          <img src="media/fur-jacket.jpg" alt="Brown Fur Leather Jacket" />
+          <p>Brown Fur Leather Jacket</p>
+          <p><strong>350$</strong></p>
+      </a>
+      <a href="product-detail.html?item=printed-leather-jacket" class="support-item" data-name="Printed Leather Jacket" data-price="400$" data-image="media/printed-LJ.jpeg">
+          <img src="media/printed-LJ.jpeg" alt="Printed Leather Jacket" />
+          <p>Printed Leather Jacket</p>
+          <p><strong>400$</strong></p>
+      </a>
+      <a href="product-detail.html?item=blue-white-leather-jacket" class="support-item" data-name="Blue & White Leather Jacket" data-price="200$" data-image="media/printed-LJ2.webp">
+          <img src="media/printed-LJ2.webp" alt="Blue & White Leather Jacket" />
+          <p>Blue & White Leather Jacket</p>
+          <p><strong>200$</strong></p>
+      </a>
+      <a href="product-detail.html?item=printed-puffer-jacket" class="support-item" data-name="Printed Puffer Jacket" data-price="220$" data-image="media/puffer-printed.webp">
+          <img src="media/puffer-printed.webp" alt="Printed Puffer Jacket" />
+          <p>Printed Puffer Jacket</p>
+          <p><strong>220$</strong></p>
+      </a>
+      <a href="product-detail.html?item=puffer-jacket" class="support-item" data-name="Puffer Jacket" data-price="120$" data-image="media/puffer-jacket.jpeg">
+          <img src="media/puffer-jacket.jpeg" alt="Puffer Jacket" />
+          <p>Puffer Jacket</p>
+          <p><strong>120$</strong></p>
+      </a>    
+      <a href="product-detail.html?item=plain-polo-shirt" class="support-item" data-name="Plain Polo Shirt" data-price="40$" data-image="media/polo1.jpg">
+          <img src="media/polo1.jpg" alt="Plain Polo Shirt" />
+          <p>Plain Polo Shirt</p>
+          <p><strong>40$</strong></p>
+      </a>
+      <a href="product-detail.html?item=printed-polo-shirt" class="support-item" data-name="Printed Polo Shirt" data-price="70$" data-image="media/polo.webp">
+          <img src="media/polo.webp" alt="Printed Polo Shirt" />
+          <p>Printed Polo Shirt</p>
+          <p><strong>70$</strong></p>
+      </a>  
+  </div>
+</section>
+
+<section class="support-section" id="home-decor">
+  <h2><center><strong>Home Decor</strong></center></h2>
+  <div class="support-items">
+      <a href="product-detail.html?item=premium-clock" class="support-item" data-name="Premium Clock" data-price="70$" data-image="media/decor1.png">
+          <img src="media/decor1.png" alt="Premium Clock" />
+          <p>Premium Clock</p>
+          <p><strong>70$</strong></p>
+      </a>
+      <a href="product-detail.html?item=two-digit-clock" class="support-item" data-name="Two Digit Clock" data-price="100$" data-image="media/decor2.png">
+          <img src="media/decor2.png" alt="Two Digit Clock" />
+          <p>Two Digit Clock</p>
+          <p><strong>100$</strong></p>
+      </a>
+      <a href="product-detail.html?item=goat-decor" class="support-item" data-name="Goat Decor" data-price="200$" data-image="media/decor3.png">
+          <img src="media/decor3.png" alt="Goat Decor" />
+          <p>Goat Decor</p>
+          <p><strong>200$</strong></p>
+      </a>
+      <a href="product-detail.html?item=wall-decor" class="support-item" data-name="Wall Decor" data-price="70$" data-image="media/decor4.png">
+          <img src="media/decor4.png" alt="Wall Decor" />
+          <p>Wall Decor</p>
+          <p><strong>70$</strong></p>
+      </a>
+      <a href="product-detail.html?item=brown-wooden-decor" class="support-item" data-name="Brown Wooden Decor" data-price="150$" data-image="media/decor5.png">
+          <img src="media/decor5.png" alt="Brown Wooden Decor" />
+          <p>Brown Wooden Decor</p>
+          <p><strong>150$</strong></p>
+      </a>
+      <a href="product-detail.html?item=wall-holding-decor" class="support-item" data-name="Wall Holding Decor" data-price="80$" data-image="media/decor6.png">
+          <img src="media/decor6.png" alt="Wall Holding Decor" />
+          <p>Wall Holding Decor</p>
+          <p><strong>80$</strong></p>
+      </a>
+      <a href="product-detail.html?item=sigmoid-face" class="support-item" data-name="Sigmoid Face" data-price="50$" data-image="media/decor7.png">
+          <img src="media/decor7.png" alt="Sigmoid Face" />
+          <p>Sigmoid Face</p>
+          <p><strong>50$</strong></p>
+      </a>
+      <a href="product-detail.html?item=house-hang-decor" class="support-item" data-name="House Hang Decor" data-price="90$" data-image="media/decor8.png">
+          <img src="media/decor8.png" alt="House Hang Decor" />
+          <p>House Hang Decor</p>
+          <p><strong>90$</strong></p>
+      </a>      
+  </div>
+</section>
+
+<section class="support-section" id="bags">
+  <h2><center><strong>Bags</strong></center></h2>
+  <div class="support-items">
+      <a href="product-detail.html?item=premium-bag" class="support-item" data-name="Premium Bag" data-price="90$" data-image="media/bag1.png">
+          <img src="media/bag1.png" alt="Premium Bag" />
+          <p>Premium Bag</p>
+          <p><strong>90$</strong></p>
+      </a>
+      <a href="product-detail.html?item=black-leather-bag" class="support-item" data-name="Black Leather Bag" data-price="180$" data-image="media/bag2.png">
+          <img src="media/bag2.png" alt="Black Leather Bag" />
+          <p>Black Leather Bag</p>
+          <p><strong>180$</strong></p>
+      </a>
+      <a href="product-detail.html?item=brown-top-bag" class="support-item" data-name="Brown Top Bag" data-price="200$" data-image="media/bag3.png">
+          <img src="media/bag3.png" alt="Brown Top Bag" />
+          <p>Brown Top Bag</p>
+          <p><strong>200$</strong></p>
+      </a>
+      <a href="product-detail.html?item=bs-leather-bag" class="support-item" data-name="BS Leather Bag" data-price="80$" data-image="media/bag4.png">
+          <img src="media/bag4.png" alt="BS Leather Bag" />
+          <p>BS Leather Bag</p>
+          <p><strong>80$</strong></p>
+      </a>
+      <a href="product-detail.html?item=shiny-leather-bag" class="support-item" data-name="Shiny Leather Bag" data-price="150$" data-image="media/bag5.png">
+          <img src="media/bag5.png" alt="Shiny Leather Bag" />
+          <p>Shiny Leather Bag</p>
+          <p><strong>150$</strong></p>
+      </a>
+  </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-section about-us">
+              <h3>About Us</h3>
+              <p>Our vision is to redefine the landscape of retailing and E-commerce by working towards a more customer-centric business approach and to ensure customer convenience and gratification.</p>
+          </div>
+          <div class="footer-section contact-us">
+              <h3>Contact Us</h3>
+              <p>Phone: 571---7311</p>
+              <p>Email: support@oneclicksolution.online</p>
+              <p>Address: 6703 Bowie Dr, Springfield, VA 22150</p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          
+          <p><a href="refund.html"><strong>Refund Policy</strong></a> | <a href="dilivery.html"> <strong >Delivery Policy </strong></a> | <a href="privacy.html"><strong> Privacy Policy </strong></a></p>
+          <p>&copy; 2024 One Click Solution. All rights reserved. <span class="trademark">TM</span></p>
+      </div>
+  </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
